@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="menu-layout">
+    <div class="menu-item">Home</div>
+    <div class="menu-item">Products and Services</div>
+    <div class="menu-item"><a href="contactus.html">Contact Us</a></div>
+  </div>
+
+  <div class="column-layout">
+    <div class="main-column">
+      <h2>Welcome to Aly's Skincare</h2>
+      <p>
+        Aly's Skincare offers facial serums for all skin types. Face rollers and
+        masks are also avaliable 15% every purchace over $25.
+      </p>
+    </div>
+    <div class="side-bar">
+      <img
+        id="logo"
+        src="https://cdn.glitch.global/22e06cda-fd04-48dc-b280-4d12d10011cc/Aly's%20Skincare.png?v=1671169001130"
+      />
+      <ul>
+        <li>Face Serums</li>
+        <li>Face Masks</li>
+        <li>Ice Rollers</li>
+      </ul>
+    </div>
+  </div>
+  <div id="specialoffers" class="call-outs-container">
+    <div class="call-out">
+      <h4>Face Serums</h4>
+      <p>
+        Selling the perfect facial serums to help with skin elasicity and
+        mosturize the skin. Other serums for oily to dry skin, redness and acne,
+        and brightning and wrikles starting at $14.99!
+      </p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="call-out">
+      <h4>Ice Rollers and Face Masks</h4>
+      <p>
+        Get different size ice rollers and face masks to keep your skin looking
+        fresh. Buy one get one 15% off every purchace over $25! Sign up now to
+        get 30% your first purchace.
+      </p>
+      <button>Learn More</button>
+    </div>
+  </div>
+
+  <div style="text-align: center; background-color: white">
+    <button id="hidebutton" onclick="hideAds()">Hide Offers</button>
+  </div>
+
+  <script>
+    function hideAds() {
+      var x = document.getElementById("specialoffers");
+      var y = document.getElementById("hidebutton");
+      x.style.display = "none";
+      y.style.display = "none";
+    }
+  </script>
+</body>
